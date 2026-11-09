@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Nullie James's WDD 231 coursework, responsive web design, and interactive certificate course list.">
+    <meta name="author" content="Nullie James">
+    <title>WDD 231 | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap">
+          <img src="images/logo.svg" alt="Site logo" class="site-logo">
+          <span class="site-name">Nullie James</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="active" aria-current="page">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="https://www.byui.edu/" target="_blank" rel="noreferrer">Chamber Project</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#project">Project Overview</a></li>
+        </ul>
+      </nav>
+
+      <main id="home">
+        <h1>Home</h1>
+
+        <section class="info-card" id="about">
+          <div class="card-header">
+            <h2>About Me</h2>
+          </div>
+          <div class="card-body two-column">
+            <p>
+              My name is <strong>Nullie James</strong>, and I am currently a student at Brigham Young University (BYU).
+              I am a motivated and curious learner who is passionate about growing in technology, creativity, and problem-solving.
+              Through my studies, I hope to strengthen my skills in web development, design, and communication while building
+              a strong foundation for my future career. I enjoy learning new things, improving my abilities, and creating work
+              that is both useful and meaningful. Being a student at BYU inspires me to work hard, stay focused, and continue
+              developing both academically and personally.
+            </p>
+            <div class="photo-frame">
+              <img src="images/james.jpg" alt="Nullie James portrait" class="student-photo">
+            </div>
+          </div>
+        </section>
+
+        <section class="info-card" id="courses">
+          <div class="card-header">
+            <h2>Web Certificate Courses</h2>
+          </div>
+          <div class="courses-panel">
+            <div class="filter-row" role="group" aria-label="Filter courses by subject">
+              <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">All</button>
+              <button class="filter-btn" data-filter="cse" type="button" aria-pressed="false">CSE</button>
+              <button class="filter-btn" data-filter="wdd" type="button" aria-pressed="false">WDD</button>
+            </div>
+            <div id="course-list" class="course-list" aria-live="polite"></div>
+            <p class="credit-summary">The total credits for course listed above is <span id="credit-total">0</span></p>
+          </div>
+        </section>
+
+        <section class="info-card" id="project">
+          <div class="card-header">
+            <h2>Project Overview</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              This WDD 231 homepage brings together responsive navigation, an introduction, and an interactive
+              certificate course list. Choose a subject filter to view courses and update the credit total.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <nav class="social-links" aria-label="Social media links">
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1Zm-1.3 1.15h2.6V18h-2.6V9.65Zm4.44 0h2.49v1.13h.03c.35-.66 1.2-1.35 2.47-1.35 2.64 0 3.12 1.73 3.12 3.98V18h-2.6v-16.8h0v-.03l-.03.03h-2.6v-.03c0 0 0 .03-.03.03v16.8h-2.6V9.65Z"/></svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.13c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.82 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.9 0-1.3.46-2.37 1.22-3.2-.12-.3-.53-1.53.12-3.18 0 0 1-.32 3.3 1.22a11.45 11.45 0 0 1 6 0c2.3-1.54 3.3-1.22 3.3-1.22.65 1.65.24 2.88.12 3.18.76.83 1.22 1.9 1.22 3.2 0 4.58-2.82 5.6-5.5 5.9.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2h3.4l-7.4 8.45L22.8 22h-6.7l-5.24-7.14L4.6 22H1.2l7.93-9.07L1.2 2h6.86l4.74 6.61L18.9 2Zm-1.2 18h1.87L7.2 3.9H5.2L17.7 20Z"/></svg>
+          </a>
+        </nav>
+
+        <div class="footer-meta">
+          <p>&copy; <span id="currentyear"></span> • Nullie James • Freetown, Sierra Leone</p>
+          <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
