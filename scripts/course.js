@@ -1,7 +1,10 @@
 const courses = [
-  { name: 'WDD 130', credits: 3, type: 'wdd', completed: true },
-  { name: 'WDD 131', credits: 3, type: 'wdd', completed: false },
-  { name: 'WDD 231', credits: 3, type: 'wdd', completed: false }
+  { name: 'CSE 110', credits: 2, type: 'cse', completed: true },
+  { name: 'CSE 111', credits: 2, type: 'cse', completed: true },
+  { name: 'CSE 210', credits: 2, type: 'cse', completed: true },
+  { name: 'WDD 130', credits: 2, type: 'wdd', completed: true },
+  { name: 'WDD 131', credits: 2, type: 'wdd', completed: true },
+  { name: 'WDD 231', credits: 2, type: 'wdd', completed: false }
 ];
 
 const courseList = document.getElementById('course-list');
@@ -19,27 +22,22 @@ function renderCourses(filter = 'all') {
   courseList.innerHTML = '';
 
   if (visibleCourses.length === 0) {
-    const emptyMessage = document.createElement('p');
+    const emptyMessage = document.createElement('li');
     emptyMessage.className = 'course-empty';
     emptyMessage.textContent = 'No courses are currently listed for this subject.';
     courseList.appendChild(emptyMessage);
   }
 
   visibleCourses.forEach((course) => {
-    const card = document.createElement('div');
+    const card = document.createElement('li');
     card.className = `course-item${course.completed ? ' completed' : ''}`;
     const label = document.createElement('span');
     label.className = 'course-label';
     label.textContent = course.name;
-    card.appendChild(label);
-
     if (course.completed) {
-      const status = document.createElement('span');
-      status.className = 'course-status';
-      status.textContent = 'Completed';
-      card.appendChild(status);
+      label.textContent += ' (Completed)';
     }
-
+    card.appendChild(label);
     courseList.appendChild(card);
   });
 
