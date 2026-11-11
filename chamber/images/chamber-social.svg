@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#123f3e"/>
+  <circle cx="1000" cy="50" r="290" fill="#0c6965"/>
+  <circle cx="1070" cy="95" r="205" fill="#efbd55" opacity=".9"/>
+  <path d="M0 470c160-70 300-70 460 0s300 70 460 0 180-45 280-6v166H0z" fill="#0c6965"/>
+  <path d="M0 525c160-70 300-70 460 0s300 70 460 0 180-45 280-6v111H0z" fill="#efbd55"/>
+  <text x="78" y="235" fill="#efbd55" font-family="Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="8">LOCAL BUSINESS · SHARED SUCCESS</text>
+  <text x="75" y="335" fill="#fff" font-family="Arial,sans-serif" font-size="76" font-weight="700">Freetown Chamber</text>
+  <text x="80" y="410" fill="#fff" font-family="Arial,sans-serif" font-size="42">Member Directory</text>
+</svg>
