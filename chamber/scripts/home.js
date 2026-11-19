@@ -13,12 +13,15 @@ function updateFooterDates() {
   yearElement.textContent = String(new Date().getFullYear());
 
   const modifiedDate = new Date(document.lastModified);
-  modifiedElement.dateTime = Number.isNaN(modifiedDate.getTime())
-    ? ""
-    : modifiedDate.toISOString();
-  modifiedElement.textContent = Number.isNaN(modifiedDate.getTime())
-    ? document.lastModified
-    : modifiedDate.toLocaleString();
+  if (Number.isNaN(modifiedDate.getTime())) {
+    modifiedElement.removeAttribute("datetime");
+    modifiedElement.textContent = "";
+    return;
+  }
+
+  const timestamp = modifiedDate.toISOString();
+  modifiedElement.dateTime = timestamp;
+  modifiedElement.textContent = timestamp.slice(0, 10);
 }
 
 function createSpotlight(member) {

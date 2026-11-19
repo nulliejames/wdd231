@@ -13,6 +13,9 @@
     <meta property="og:type" content="website">
     <title>Freetown Chamber of Commerce | Home</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -34,11 +37,11 @@
 
     <main>
       <section class="home-hero" aria-labelledby="hero-title">
-        <img src="images/wera.jpg" alt="Visitors rafting through a stretch of whitewater" width="600" height="400" fetchpriority="high">
+        <img src="images/wera.jpg" alt="Visitors rafting through a stretch of whitewater" width="600" height="400">
         <div class="hero-copy">
           <p class="eyebrow">Local business. Shared success.</p>
-          <h1 id="hero-title">A stronger Freetown starts together.</h1>
-          <p>Meet the people, businesses, and ideas shaping opportunity across our community.</p>
+          <h1 id="hero-title">Freetown Chamber of Commerce</h1>
+          <p>A stronger Freetown starts together. Meet the people, businesses, and ideas shaping opportunity across our community.</p>
           <a class="join-button" href="join.html">Join the chamber</a>
         </div>
       </section>
@@ -48,10 +51,11 @@
           <p class="eyebrow">Meet. Connect. Grow.</p>
           <h2 id="events-title">Upcoming event</h2>
           <article class="event-card">
-            <div class="event-date" aria-label="Thursday, November 26, 2026">
-              <span>Nov</span>
-              <strong>26</strong>
-            </div>
+            <time class="event-date" datetime="2026-11-26">
+              <span aria-hidden="true">Nov</span>
+              <strong aria-hidden="true">26</strong>
+              <span class="visually-hidden">Thursday, November 26, 2026</span>
+            </time>
             <div>
               <h3>Freetown Business Exchange</h3>
               <p>Meet fellow business owners, share ideas, and build new local partnerships.</p>
@@ -94,7 +98,7 @@
             <span>Freetown Chamber of Commerce</span>
           </a>
           <p class="footer-tagline">Connecting local businesses. Growing our community.</p>
-          <div class="social-sharing" aria-label="Share the chamber home page">
+          <nav class="social-sharing" aria-label="Share the chamber home page">
             <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnulliejames.github.io%2Fwdd231%2Fchamber%2Findex.html"
                target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V21h3.4z"/></svg>
@@ -110,7 +114,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.7 9.7 0 0 0-8.3 14.7L2.4 22l5.5-1.4A9.8 9.8 0 1 0 12 2Zm0 17.8c-1.4 0-2.7-.4-3.8-1.1l-.3-.2-3.2.8.9-3.1-.2-.3A8 8 0 1 1 12 19.8Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.5l.4-.4.3-.4c.1-.2 0-.3 0-.4s-.6-1.5-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.4.5.6.2 1.2.2 1.6.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.2-.2-.2-.4-.3Z"/></svg>
               <span>WhatsApp</span>
             </a>
-          </div>
+          </nav>
         </div>
         <div class="footer-details">
           <h2>Get in touch</h2>
