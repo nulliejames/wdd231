@@ -1,0 +1,316 @@
+.home-highlights,
+.spotlight-grid,
+.forecast-list,
+.event-card {
+  display: grid;
+}
+
+.weather-current,
+.forecast-day {
+  display: flex;
+  align-items: center;
+}
+
+.home-hero,
+.hero-copy {
+  position: relative;
+  min-height: 25rem;
+}
+
+.home-hero > img,
+.visually-hidden {
+  position: absolute;
+}
+
+.home-hero > img,
+.spotlight-card > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.event-card p,
+.weather-temperature,
+.weather-description,
+.weather-message {
+  margin: 0;
+}
+
+.event-date,
+.weather-temperature,
+.forecast-day strong {
+  color: var(--teal-dark);
+}
+
+.event-details,
+.weather-current {
+  margin-top: 0.75rem;
+}
+
+.event-date span,
+.weather-temperature,
+.join-button {
+  font-weight: 700;
+}
+
+.event-card .event-details,
+.forecast-day {
+  font-size: 0.88rem;
+}
+
+.weather-temperature span,
+.spotlight-details h3 {
+  font-size: 1.2rem;
+}
+
+.weather-message,
+.spotlight-details address {
+  font-size: 0.9rem;
+}
+
+.home-hero,
+.spotlight-card,
+.visually-hidden {
+  overflow: hidden;
+}
+
+.forecast-day strong,
+.visually-hidden {
+  white-space: nowrap;
+}
+
+.home-highlights,
+.event-card,
+.weather-current {
+  gap: 1rem;
+}
+
+.home-panel,
+.spotlight-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.event-card p,
+.weather-description,
+.weather-message,
+.section-heading > p:last-child,
+.spotlight-details address {
+  color: var(--muted);
+}
+
+.home-hero {
+  margin: 1.25rem 0 2rem;
+  border-radius: 0.9rem;
+  background: var(--teal-dark);
+  color: var(--white);
+}
+
+.home-hero > img {
+  inset: 0;
+  height: 100%;
+  object-position: center 56%;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(1.5rem, 6vw, 4rem);
+  background: linear-gradient(90deg, #082d2de0, #082d2d8c 60%, #082d2d1f);
+}
+
+.hero-copy .eyebrow {
+  color: #ffda82;
+}
+
+.hero-copy h1 {
+  max-width: 40rem;
+  font-size: clamp(2.15rem, 9vw, 4rem);
+}
+
+.hero-copy > p:not(.eyebrow) {
+  max-width: 35rem;
+  margin: 0.9rem 0 1.4rem;
+  color: #f0f7f3;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid var(--gold);
+  border-radius: 0.35rem;
+  background: var(--gold);
+  color: #173b3b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.join-button:hover {
+  background: #ffda82;
+}
+
+.home-highlights {
+  margin-bottom: 3rem;
+}
+
+.home-panel {
+  padding: 1.25rem;
+}
+
+.home-panel h2,
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.event-card {
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.event-date {
+  display: grid;
+  justify-items: center;
+  padding: 0.55rem 0.3rem;
+  border-radius: 0.4rem;
+  background: #e4f2ee;
+  text-transform: uppercase;
+}
+
+.event-date span {
+  font-size: 0.75rem;
+}
+
+.event-date strong {
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+.event-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.15rem;
+}
+
+.event-card p {
+  line-height: 1.55;
+}
+
+.weather-current {
+  min-height: 4.2rem;
+}
+
+.weather-temperature {
+  font-size: 2.5rem;
+}
+
+.weather-temperature span {
+  margin-left: 0.15rem;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+.forecast-heading {
+  margin: 0.6rem 0 0.55rem;
+  font-size: 1rem;
+}
+
+.forecast-list {
+  gap: 0.45rem;
+}
+
+.forecast-day {
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--line);
+}
+
+.spotlights-section {
+  padding-bottom: 3rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-heading > p:last-child {
+  margin: 0.5rem 0 0;
+}
+
+.spotlight-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.spotlight-card > img {
+  height: 11rem;
+  background: #d9e8df;
+}
+
+.spotlight-details {
+  padding: 1rem;
+}
+
+.spotlight-details h3 {
+  margin: 0 0 0.7rem;
+}
+
+.spotlight-details address {
+  margin-bottom: 0.8rem;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.spotlight-details a {
+  overflow-wrap: anywhere;
+}
+
+.spotlight-details .membership {
+  margin-top: 0.8rem;
+}
+
+@media (min-width: 40rem) {
+  .home-hero,
+  .hero-copy {
+    min-height: 31rem;
+  }
+
+  .home-highlights {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr);
+  }
+
+  .home-highlights,
+  .spotlight-grid {
+    gap: 1.25rem;
+  }
+
+  .home-panel {
+    padding: 1.5rem;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .spotlight-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
