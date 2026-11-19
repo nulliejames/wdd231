@@ -113,6 +113,250 @@ h1 {
   color: var(--muted);
 }
 
+.home-hero {
+  position: relative;
+  min-height: 25rem;
+  margin: 1.25rem 0 2rem;
+  overflow: hidden;
+  border-radius: 0.9rem;
+  background: var(--teal-dark);
+  color: var(--white);
+}
+
+.home-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 56%;
+}
+
+.hero-copy {
+  position: relative;
+  display: flex;
+  min-height: 25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(1.5rem, 6vw, 4rem);
+  background: linear-gradient(90deg, rgb(8 45 45 / 88%), rgb(8 45 45 / 55%) 60%, rgb(8 45 45 / 12%));
+}
+
+.hero-copy .eyebrow {
+  color: #ffda82;
+}
+
+.hero-copy h1 {
+  max-width: 40rem;
+  font-size: clamp(2.15rem, 9vw, 4rem);
+}
+
+.hero-copy > p:not(.eyebrow) {
+  max-width: 35rem;
+  margin: 0.9rem 0 1.4rem;
+  color: #f0f7f3;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid var(--gold);
+  border-radius: 0.35rem;
+  background: var(--gold);
+  color: #173b3b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.join-button:hover {
+  background: #ffda82;
+}
+
+.home-highlights {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.home-panel {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.home-panel h2,
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.event-date {
+  display: grid;
+  justify-items: center;
+  padding: 0.55rem 0.3rem;
+  border-radius: 0.4rem;
+  background: #e4f2ee;
+  color: var(--teal-dark);
+  text-transform: uppercase;
+}
+
+.event-date span {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.event-date strong {
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.event-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.15rem;
+}
+
+.event-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.event-card .event-details {
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+}
+
+.weather-current {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 4.2rem;
+  margin-top: 0.75rem;
+}
+
+.weather-temperature {
+  margin: 0;
+  color: var(--teal-dark);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.weather-temperature span {
+  margin-left: 0.15rem;
+  font-size: 1.2rem;
+}
+
+.weather-description {
+  margin: 0;
+  color: var(--muted);
+  text-transform: capitalize;
+}
+
+.forecast-heading {
+  margin: 0.6rem 0 0.55rem;
+  font-size: 1rem;
+}
+
+.forecast-list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.forecast-day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.88rem;
+}
+
+.forecast-day strong {
+  color: var(--teal-dark);
+  white-space: nowrap;
+}
+
+.weather-message {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.spotlights-section {
+  padding-bottom: 3rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-heading > p:last-child {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.spotlight-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.spotlight-card > img {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  background: #d9e8df;
+}
+
+.spotlight-details {
+  padding: 1rem;
+}
+
+.spotlight-details h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1.2rem;
+}
+
+.spotlight-details address {
+  margin-bottom: 0.8rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.spotlight-details a {
+  overflow-wrap: anywhere;
+}
+
+.spotlight-details .membership {
+  margin-top: 0.8rem;
+}
+
 .directory {
   padding-bottom: 3rem;
 }
@@ -233,7 +477,7 @@ h1 {
 
 .list-view .member-card {
   display: grid;
-  grid-template-columns: minmax(5.5rem, 8rem) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   border-radius: 0;
   box-shadow: none;
@@ -248,10 +492,7 @@ h1 {
 }
 
 .list-view .member-card img {
-  width: 100%;
-  height: 100%;
-  min-height: 8rem;
-  aspect-ratio: auto;
+  display: none;
 }
 
 .list-view .member-details {

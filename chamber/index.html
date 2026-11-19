@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover Freetown Chamber of Commerce events, local business members, and current weather in Freetown, Sierra Leone.">
+    <meta name="author" content="Nullie James">
+    <meta name="openweathermap-api-key" content="YOUR_OPENWEATHERMAP_API_KEY">
+    <meta property="og:title" content="Freetown Chamber of Commerce">
+    <meta property="og:description" content="Connecting local businesses and growing the Freetown community.">
+    <meta property="og:image" content="https://nulliejames.github.io/wdd231/chamber/images/chamber-social.svg">
+    <meta property="og:url" content="https://nulliejames.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+    <title>Freetown Chamber of Commerce | Home</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/home.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Freetown Chamber of Commerce home">
+        <img src="images/sierralogistics-card.jpg" alt="" width="52" height="52">
+        <span>Freetown <strong>Chamber of Commerce</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-hero" aria-labelledby="hero-title">
+        <img src="images/wera.jpg" alt="Visitors rafting through a stretch of whitewater" width="600" height="400" fetchpriority="high">
+        <div class="hero-copy">
+          <p class="eyebrow">Local business. Shared success.</p>
+          <h1 id="hero-title">A stronger Freetown starts together.</h1>
+          <p>Meet the people, businesses, and ideas shaping opportunity across our community.</p>
+          <a class="join-button" href="join.html">Join the chamber</a>
+        </div>
+      </section>
+
+      <div class="home-highlights">
+        <section class="home-panel event-panel" aria-labelledby="events-title">
+          <p class="eyebrow">Meet. Connect. Grow.</p>
+          <h2 id="events-title">Upcoming event</h2>
+          <article class="event-card">
+            <div class="event-date" aria-label="Thursday, November 26, 2026">
+              <span>Nov</span>
+              <strong>26</strong>
+            </div>
+            <div>
+              <h3>Freetown Business Exchange</h3>
+              <p>Meet fellow business owners, share ideas, and build new local partnerships.</p>
+              <p class="event-details"><time datetime="2026-11-26T17:30">Thursday, November 26 · 5:30 PM</time><br>12 Siaka Stevens Street, Freetown</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="home-panel weather-panel" aria-labelledby="weather-title">
+          <p class="eyebrow">Freetown, Sierra Leone</p>
+          <h2 id="weather-title">Local weather</h2>
+          <div class="weather-current" id="current-weather" aria-live="polite" aria-busy="true">
+            <p class="weather-temperature">--<span>°C</span></p>
+            <p class="weather-description">Loading current conditions…</p>
+          </div>
+          <h3 class="forecast-heading">Three-day forecast</h3>
+          <div class="forecast-list" id="weather-forecast" aria-live="polite" aria-busy="true">
+            <p class="weather-message">Forecast loading…</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="spotlights-section" aria-labelledby="spotlights-title">
+        <div class="section-heading">
+          <p class="eyebrow">Meet our members</p>
+          <h2 id="spotlights-title">Member spotlights</h2>
+          <p>Discover a few of the local businesses investing in Freetown.</p>
+        </div>
+        <div class="spotlight-grid" id="spotlight-list" aria-live="polite" aria-busy="true">
+          <p class="weather-message">Loading member spotlights…</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-contact">
+          <a class="footer-brand" href="index.html">
+            <img src="images/chamber-mark.svg" alt="" width="44" height="44">
+            <span>Freetown Chamber of Commerce</span>
+          </a>
+          <p class="footer-tagline">Connecting local businesses. Growing our community.</p>
+          <div class="social-sharing" aria-label="Share the chamber home page">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnulliejames.github.io%2Fwdd231%2Fchamber%2Findex.html"
+               target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V21h3.4z"/></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fnulliejames.github.io%2Fwdd231%2Fchamber%2Findex.html"
+               target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM3.7 8.5h3v11h-3v-11Zm4.9 0h2.9V10h.1c.4-.8 1.4-1.8 3-1.8 3.2 0 3.8 2.1 3.8 4.8v6.5h-3v-5.8c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.9h-3v-11Z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://wa.me/?text=Explore%20the%20Freetown%20Chamber%20of%20Commerce%3A%20https%3A%2F%2Fnulliejames.github.io%2Fwdd231%2Fchamber%2Findex.html"
+               target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.7 9.7 0 0 0-8.3 14.7L2.4 22l5.5-1.4A9.8 9.8 0 1 0 12 2Zm0 17.8c-1.4 0-2.7-.4-3.8-1.1l-.3-.2-3.2.8.9-3.1-.2-.3A8 8 0 1 1 12 19.8Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.5l.4-.4.3-.4c.1-.2 0-.3 0-.4s-.6-1.5-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.4.5.6.2 1.2.2 1.6.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.2-.2-.2-.4-.3Z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-details">
+          <h2>Get in touch</h2>
+          <address>
+            12 Siaka Stevens Street, Freetown, Sierra Leone<br>
+            <a href="tel:+23276123123">+232 76 123 123</a>
+            <a href="mailto:info@freetownchamber.example">info@freetownchamber.example</a>
+          </address>
+        </div>
+        <div class="footer-details">
+          <h2>Explore</h2>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join the chamber</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Freetown Chamber of Commerce. All rights reserved.</p>
+        <p><strong>Nullie James</strong> <span aria-hidden="true">·</span> WDD 231</p>
+        <p>Last modified: <time id="last-modified"></time></p>
+      </div>
+    </footer>
+  </body>
+</html>

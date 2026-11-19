@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Cotton Tree Cafe",
+    "tagline": "Coffee, fresh pastries, and Freetown hospitality.",
+    "address": "12 Siaka Stevens Street, Freetown",
+    "phone": "+232 76 123 123",
+    "website": "https://example.com/cotton-tree-cafe",
+    "image": "cottontreecafe-card.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Peninsula Medical Centre",
+    "tagline": "Community-focused primary care for every generation.",
+    "address": "8 Wilkinson Road, Freetown",
+    "phone": "+232 77 234 234",
+    "website": "https://example.com/peninsula-medical",
+    "image": "peninsularmedicalcenter-card.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Atlantic View Hotel",
+    "tagline": "A welcoming stay overlooking the Atlantic coast.",
+    "address": "24 Lumley Beach Road, Freetown",
+    "phone": "+232 78 345 345",
+    "website": "https://example.com/atlantic-view",
+    "image": "atlanticviewhotel-card.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Green Hills Farm Market",
+    "tagline": "Locally grown produce from farms across Sierra Leone.",
+    "address": "3 Regent Road, Freetown",
+    "phone": "+232 30 456 456",
+    "website": "https://example.com/green-hills-market",
+    "image": "greenhillfarm-card.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Salone Digital Works",
+    "tagline": "Digital services and practical technology for local business.",
+    "address": "15 Aberdeen Road, Freetown",
+    "phone": "+232 31 567 567",
+    "website": "https://example.com/salone-digital",
+    "image": "salonedigitalwork-card.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Krio Craft Collective",
+    "tagline": "Handmade gifts celebrating local makers and heritage.",
+    "address": "6 Rawdon Street, Freetown",
+    "phone": "+232 32 678 678",
+    "website": "https://example.com/krio-craft",
+    "image": "kriocraftcollective-card.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Sierra Coast Logistics",
+    "tagline": "Dependable freight and delivery throughout the region.",
+    "address": "19 Kissy Road, Freetown",
+    "phone": "+232 33 789 789",
+    "website": "https://example.com/sierra-coast-logistics",
+    "image": "sierralogistics-card.jpg",
+    "membershipLevel": 2
+  }
+]
